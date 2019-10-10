@@ -1,0 +1,29 @@
+<html>
+    <head>
+            <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        <title>
+            Fibonacci Nth Term Finder
+        </title>
+    </head>
+
+<body>
+    <div>
+        <input type="button" class="btn btn-info" value="Home" onclick=" relocate_home()">
+
+<script>
+function relocate_home()
+{
+     location.href = "0.0.0.0:8000/index";
+} 
+</script>
+<<h1>Fibonacci Nth Term Finder</h1>
+                   <form action="/", method="get">
+            <strong>Enter The Value of N:</strong> <input name='N' type='text' required/>
+            <button class='btn btn-primary' type='submit'> Submit </button>
+                   </form>
+
+            {% block content %}
+            {% endblock %}
+    </div>
+</body>
+</html>
